@@ -3,20 +3,20 @@
 #include <Servo.h>
 Servo myservo;
 int pos = 0;
-int servoPin = 9;
-int maxServoDegrees = 90;
-int minServoDegrees = 0;
+const int servoPin = 9;
+const int maxServoDegrees = 90;
+const int minServoDegrees = 0;
 
 #define OPEN HIGH
 #define CLOSED LOW
 
 // PIR
-int PIR = 2;
+const int PIR = 2;
 int eyeState = OPEN;
 unsigned long lastMotionAt = 0;
 unsigned long finishedAt = 0;
-int servoDelay = 5;
-int servoLongDelay = 100;
+const int servoDelay = 5;
+const int servoLongDelay = 100;
 
 void setup() {
   // PIR
